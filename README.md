@@ -36,11 +36,11 @@ Installation
 
 - Initialize the DS18B20 object in your program
 
-DS18B20_1Wire sensor(25, 15); // TH = 25°C, TL = 15°C
+    DS18B20_1Wire sensor(25, 15); // TH = 25°C, TL = 15°C
 
 - Read temperature:
 
-sensor.checkTemperature();
-
-float temp = sensor.getTemperature();
-
+    sensor.checkTemperature();
+    
+    float temp = sensor.getTemperature();
+    
