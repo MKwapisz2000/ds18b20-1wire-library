@@ -30,17 +30,62 @@ Installation
 
 - Add the following files to your project:
 
-- DS18B20_1Wire.h
-
-- DS18B20_1Wire.cpp
+        DS18B20_1Wire.h
+        
+        DS18B20_1Wire.cpp
 
 - Initialize the DS18B20 object in your program
 
-    DS18B20_1Wire sensor(25, 15); // TH = 25°C, TL = 15°C
+        DS18B20_1Wire sensor(25, 15); // TH = 25°C, TL = 15°C
 
 - Read temperature:
 
-    sensor.checkTemperature();
-    
-    float temp = sensor.getTemperature();
-    
+        sensor.checkTemperature();
+            
+        float temp = sensor.getTemperature();
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+**Opis projektu - Polski**
+
+Biblioteka DS18B20_1Wire została stworzona w celu obsługi czujnika temperatury DS18B20 przy wykorzystaniu magistrali 1-Wire. Umożliwia odczyt temperatury, wykrywanie alarmów temperaturowych oraz skanowanie adresów urządzeń podłączonych do magistrali.
+
+Funkcjonalność
+
+- Inicjalizacja czujnika DS18B20
+
+- Odczyt temperatury w stopniach Celsjusza
+
+- Obsługa alarmu temperatury – ustawienie górnego (TH) i dolnego (TL) progu temperatury
+
+- Skanowanie adresu ROM – wykrywanie adresu czujnika DS18B20
+
+- Obsługa magistrali 1-Wire – implementacja resetowania, pisania i odczytu bajtów oraz komunikacji z czujnikiem
+
+- Obsługa CRC – sprawdzanie poprawności danych z czujnika
+
+Wymagania sprzętowe
+
+- Mikrokontroler AVR (np. ATmega328P - Arduino Nano/Uno)
+
+- Czujnik DS18B20
+
+- Rezystor pull-up 4.7kΩ (podciągający magistralę 1-Wire do zasilania)
+
+Instalacja
+
+- Dodaj pliki biblioteki do projektu:
+
+        DS18B20_1Wire.h
+        
+        DS18B20_1Wire.cpp
+
+- Zainicjalizuj obiekt czujnika DS18B20 w kodzie:
+
+        DS18B20_1Wire sensor(25, 15); // TH = 25°C, TL = 15°C
+
+- Odczytaj temperaturę:
+  
+        sensor.checkTemperature();
+        
+        float temp = sensor.getTemperature();
