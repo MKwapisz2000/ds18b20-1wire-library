@@ -30,9 +30,13 @@ Installation
 
 - Add the following files to your project:
 
-        DS18B20_1Wire.h
+  DS18B20_1Wire.h
         
-        DS18B20_1Wire.cpp
+  DS18B20_1Wire.cpp
+
+- Include the library in your code:
+
+        #include "DS18B20_1Wire.h"
 
 - Initialize the DS18B20 object in your program
 
@@ -76,9 +80,13 @@ Instalacja
 
 - Dodaj pliki biblioteki do projektu:
 
-        DS18B20_1Wire.h
+  DS18B20_1Wire.h
         
-        DS18B20_1Wire.cpp
+  DS18B20_1Wire.cpp
+
+- Dołącz bibliotekę do programu
+
+        #include "DS18B20_1Wire.h"
 
 - Zainicjalizuj obiekt czujnika DS18B20 w kodzie:
 
